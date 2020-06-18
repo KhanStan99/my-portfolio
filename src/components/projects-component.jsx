@@ -19,17 +19,18 @@ export default function ProjectsComponent() {
 
   const projects = [
     {
-      title: "My Project One",
+      title: "Android Project",
       image:
-        "https://us.123rf.com/450wm/sunil4rnz4ever/sunil4rnz4ever1803/sunil4rnz4ever180301261/100284768-beautiful-scenari-in-norway.jpg?ver=6",
-      description: "blah blah",
+        "https://www.edureka.co/blog/wp-content/uploads/2019/10/Android-Projects.png",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor sapien at tortor fermentum congue. Integer dui est, eleifend at sagittis vel",
       target: "http://www.google.com",
     },
     {
-      title: "My Project Two",
-      image:
-        "https://us.123rf.com/450wm/sunil4rnz4ever/sunil4rnz4ever1803/sunil4rnz4ever180301261/100284768-beautiful-scenari-in-norway.jpg?ver=6",
-      description: "blah blah",
+      title: "ReactJS Project",
+      image: "https://miro.medium.com/max/2674/1*o5JioPIf2Y7fwXWvhLf_CA.png",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor sapien at tortor fermentum congue.",
       target: "http://www.google.com",
     },
     {
@@ -54,7 +55,7 @@ export default function ProjectsComponent() {
 
   return projects.map((item) => {
     return (
-      <Card key={item.title}>
+      <Card key={item.title} style={{ textAlign: "start" }}>
         <CardActionArea>
           <CardMedia
             className={classes.media}
