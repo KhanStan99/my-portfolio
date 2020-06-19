@@ -55,6 +55,24 @@ export default function ProjectsComponent() {
       tags: ["ReactJS", "Material UI", "Java Script", "HTMl/CSS"],
     },
     {
+      title: "Image Compressor - Android",
+      image: "../asset/image_comp.png",
+      description:
+        "An Android application to compress images. This project also includes run time permission explained.",
+      target: [
+        {
+          label: "View on Github",
+          target: "https://github.com/KhanStan99/AndroidImageCompressor",
+        },
+        {
+          label: "Download from Play Store",
+          target:
+            "https://play.google.com/store/apps/details?id=in.trentweet.imagecompressor",
+        },
+      ],
+      tags: ["Angular", "Type Script", "HTMl/CSS"],
+    },
+    {
       title: "Angular Login Structure",
       image: "https://miro.medium.com/max/3492/1*P7x-_0XfQz6CVmMY_QAv0w.png",
       description:
