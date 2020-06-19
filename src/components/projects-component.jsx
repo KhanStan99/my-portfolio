@@ -56,7 +56,8 @@ export default function ProjectsComponent() {
     },
     {
       title: "Image Compressor - Android",
-      image: "../asset/image_comp.png",
+      image:
+        "https://raw.githubusercontent.com/KhanStan99/my-portfolio/master/src/asset/image_comp.png",
       description:
         "An Android application to compress images. This project also includes run time permission explained.",
       target: [
