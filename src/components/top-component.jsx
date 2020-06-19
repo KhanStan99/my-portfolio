@@ -43,13 +43,32 @@ export default function TopComponent() {
         <Divider light className={classes.divider} />
 
         <Typography variant="caption" className={classes.nameStyle}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          porttitor sapien at tortor fermentum congue. Integer dui est, eleifend
-          at sagittis vel, ullamcorper vel velit. Nam pulvinar neque eget
-          malesuada vehicula. Interdum et malesuada fames ac ante ipsum primis
-          in faucibus. Nunc tincidunt vitae dolor id pharetra. Nunc porttitor
-          sed libero tincidunt ornare.{" "}
+          Hello there! I am a full stack software engineer have 3 years of IT
+          experiance in various technologies. I also have interest in graphic
+          designing and UI/UX development. In my free time i play and stream
+          games.
         </Typography>
+        <div>
+          <Typography variant="caption" className={classes.nameStyle}>
+            I love coding{" "}
+            <span role="img" aria-label="computer">
+              💻
+            </span>{" "}
+            gaming{" "}
+            <span role="img" aria-label="game">
+              🎮
+            </span>{" "}
+            sports
+            <span role="img" aria-label="football">
+              ⚽
+            </span>{" "}
+            and food{" "}
+            <span role="img" aria-label="food">
+              🥙
+            </span>
+          </Typography>
+        </div>
+
         <Divider light className={classes.divider} />
       </Paper>
     </Grid>

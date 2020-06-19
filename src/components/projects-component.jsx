@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Chip from "@material-ui/core/Chip";
+import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
   media: {
@@ -79,23 +80,53 @@ export default function ProjectsComponent() {
       ],
       tags: ["Android", "MVVM", "Kotlin", "XML"],
     },
+
     {
-      title: "Android MVVM Structure",
-      image: "https://miro.medium.com/max/960/1*kWwjlkOEyTV6M7W7tZrs1w.png",
+      title: "Gilfoyle's Bitcoin Alert Android App",
+      image:
+        "https://i.ytimg.com/vi/8fXKVZvHUQ8/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCM52_IeT_6oexNqF4SY5pmxyKWrQ",
       description:
-        "Android project MVVM structure. You can use this to avoid writing boiler plate code for your new projects.",
+        "Silicon Valley fan? Then you know what i am talking about! This app alerts when your set bitcoin price changes in a funny way. Try it out 😀",
       target: [
         {
           label: "View on Github",
-          target: "https://github.com/KhanStan99/AndroidImageCompressor",
+          target: "https://github.com/KhanStan99/GilfoyleAndroid",
         },
         {
-          label: "View on Play Store",
+          label: "Download APK from Github",
           target:
-            "https://play.google.com/store/apps/details?id=in.trentweet.imagecompressor",
+            "https://github.com/KhanStan99/GilfoyleAndroid/blob/master/InstallMe.apk",
         },
       ],
-      tags: ["Android", "MVVM", "Kotlin", "XML"],
+      tags: ["Android", "API", "Kotlin", "XML"],
+    },
+    {
+      title: "Transition Effect in Android App",
+      image:
+        "https://raw.githubusercontent.com/KhanStan99/SharedElementWithRetrofitResponseInRecyclerView/master/gif-image.gif",
+      description: "Basic Transition effect for your android application",
+      target: [
+        {
+          label: "View on Github",
+          target:
+            "https://github.com/KhanStan99/SharedElementWithRetrofitResponseInRecyclerView",
+        },
+      ],
+      tags: ["Android", "Kotlin", "XML"],
+    },
+    {
+      title: "TODO list Android App",
+      image:
+        "https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png",
+      description:
+        "TODO list appliation with CRUD operations uses 'NestJS' REST APIs.",
+      target: [
+        {
+          label: "View on Github",
+          target: "https://github.com/KhanStan99/TodoMobileApp",
+        },
+      ],
+      tags: ["Android", "Kotlin", "XML", "REST", "NodeJS"],
     },
   ];
 
@@ -103,45 +134,55 @@ export default function ProjectsComponent() {
     window.open(target, "_blank");
   };
 
-  return projects.map((item) => {
-    return (
-      <Card key={item.title} className={classes.cards}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image={item.image}
-            title="Contemplative Reptile"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              {item.title}
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              {item.description}
-            </Typography>
-          </CardContent>
-          <div className={classes.chip}>
-            {item.tags.map((tag) => {
-              return <Chip label={tag} key={tag} />;
-            })}
-          </div>
-        </CardActionArea>
-        <CardActions>
-          {item.target.map((target) => {
-            return (
-              <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  openProjects(target.target);
-                }}
-              >
-                {target.label}
-              </Button>
-            );
-          })}
-        </CardActions>
-      </Card>
-    );
-  });
+  return (
+    <Grid container spacing={2} direction="row">
+      {projects.map((item) => {
+        return (
+          <Grid item xs={12} sm={12} md={6} lg={3} direction="row">
+            <Card key={item.title} className={classes.cards}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image={item.image}
+                  title="Contemplative Reptile"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    {item.title}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    {item.description}
+                  </Typography>
+                </CardContent>
+                <div className={classes.chip}>
+                  {item.tags.map((tag) => {
+                    return <Chip label={tag} key={tag} />;
+                  })}
+                </div>
+              </CardActionArea>
+              <CardActions>
+                {item.target.map((target) => {
+                  return (
+                    <Button
+                      size="small"
+                      color="primary"
+                      onClick={() => {
+                        openProjects(target.target);
+                      }}
+                    >
+                      {target.label}
+                    </Button>
+                  );
+                })}
+              </CardActions>
+            </Card>
+          </Grid>
+        );
+      })}
+    </Grid>
+  );
 }

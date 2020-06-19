@@ -8,7 +8,9 @@ import Divider from "@material-ui/core/Divider";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
-
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import Typography from "@material-ui/core/Typography";
+import LanguageIcon from "@material-ui/icons/Language";
 // const useStyles = makeStyles((theme) => ({}));
 
 export default function LinksComponent() {
@@ -18,17 +20,27 @@ export default function LinksComponent() {
     {
       title: "Github",
       icon: <GitHubIcon color="primary" />,
-      target: "http://www.github.com",
+      target: "https://github.com/KhanStan99",
     },
     {
       title: "Twitter",
       icon: <TwitterIcon color="primary" />,
-      target: "http://www.Twitter.com",
+      target: "https://twitter.com/KhanStan99",
     },
     {
-      title: "Insta",
+      title: "Instagram",
       icon: <InstagramIcon color="primary" />,
-      target: "http://www.Instagram.com",
+      target: "https://www.instagram.com/KhanStan99/",
+    },
+    {
+      title: "LinkedIn",
+      icon: <LinkedInIcon color="primary" />,
+      target: "https://www.linkedin.com/in/userhidayatkhan/",
+    },
+    {
+      title: "My Blog - Trentweet",
+      icon: <LanguageIcon color="primary" />,
+      target: "https://www.trentweet.in/",
     },
   ];
 
@@ -37,21 +49,63 @@ export default function LinksComponent() {
   };
 
   return (
-    <List component="nav" aria-label="secondary mailbox folder">
-      {socialLinks.map((item) => {
-        return (
-          <div>
-            <ListItem
-              button
-              onClick={(event) => handleListItemClick(item.target)}
-            >
-              <ListItemIcon>{item.icon}</ListItemIcon>
-              <ListItemText primary={item.title} />
-            </ListItem>
-            <Divider />
-          </div>
-        );
-      })}
-    </List>
+    <div>
+      <Typography
+        color="primary"
+        variant="h4"
+        component="h2"
+        style={{ textAlign: "start" }}
+      >
+        <b>Socials</b>
+      </Typography>
+      <List component="nav" aria-label="secondary mailbox folder">
+        {socialLinks.map((item) => {
+          return (
+            <div>
+              <ListItem
+                button
+                onClick={(event) => handleListItemClick(item.target)}
+              >
+                <ListItemIcon>{item.icon}</ListItemIcon>
+                <ListItemText primary={item.title} />
+              </ListItem>
+              <Divider />
+            </div>
+          );
+        })}
+      </List>
+      <Typography
+        color="primary"
+        variant="h4"
+        component="h2"
+        style={{ textAlign: "start" }}
+      >
+        <b>Youtube Channel's</b>
+      </Typography>
+      <div
+        style={{
+          display: "flex",
+          margin: "20px",
+          flexDirection: "column",
+          alignItems: "start",
+        }}
+      >
+        <div
+          class="g-ytsubscribe"
+          data-channelid="UCW4ThNiminAyT4pvQR_t5Eg"
+          data-layout="full"
+          data-count="default"
+        />
+
+        <div
+          class="g-ytsubscribe"
+          data-channelid="UCAwvnxzb2YgftWrF8Vu7FuA"
+          data-layout="full"
+          data-count="default"
+          data-theme="dark"
+          
+        />
+      </div>
+    </div>
   );
 }

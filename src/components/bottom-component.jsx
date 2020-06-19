@@ -23,9 +23,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function BottomComponent() {
+export default function BottomComponent(props) {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+
+  const [value, setValue] = React.useState(
+    window.location.pathname === "/links" ? 1 : 0
+  );
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
