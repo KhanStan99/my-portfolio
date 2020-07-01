@@ -8,6 +8,7 @@ import {
 import React from "react";
 import TopComponent from "./components/top-component";
 import BottomComponent from "./components/bottom-component";
+import "./index.css";
 
 let theme = createMuiTheme({
   palette: {
@@ -17,6 +18,9 @@ let theme = createMuiTheme({
     secondary: {
       main: "#e57373",
     },
+  },
+  typography: {
+    fontFamily: "Comfortaa",
   },
 });
 
