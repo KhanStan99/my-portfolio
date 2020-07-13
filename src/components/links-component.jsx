@@ -61,7 +61,7 @@ export default function LinksComponent() {
       <List component="nav" aria-label="secondary mailbox folder">
         {socialLinks.map((item) => {
           return (
-            <div>
+            <div key={item.target}>
               <ListItem
                 button
                 onClick={(event) => handleListItemClick(item.target)}
@@ -91,19 +91,17 @@ export default function LinksComponent() {
         }}
       >
         <div
-          class="g-ytsubscribe"
+          className="g-ytsubscribe"
           data-channelid="UCW4ThNiminAyT4pvQR_t5Eg"
           data-layout="full"
           data-count="default"
         />
 
         <div
-          class="g-ytsubscribe"
+          className="g-ytsubscribe"
           data-channelid="UCAwvnxzb2YgftWrF8Vu7FuA"
           data-layout="full"
           data-count="default"
-          data-theme="dark"
-          
         />
       </div>
     </div>

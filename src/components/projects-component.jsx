@@ -157,7 +157,7 @@ export default function ProjectsComponent() {
     <Grid container spacing={2} direction="row">
       {projects.map((item) => {
         return (
-          <Grid item xs={12} sm={12} md={6} lg={3} direction="row">
+          <Grid item xs={12} sm={12} md={6} lg={3} key={item.title}>
             <Card key={item.title} className={classes.cards}>
               <CardActionArea>
                 <CardMedia
@@ -188,6 +188,7 @@ export default function ProjectsComponent() {
                   return (
                     <Button
                       size="small"
+                      key={target.target}
                       color="primary"
                       onClick={() => {
                         openProjects(target.target);
