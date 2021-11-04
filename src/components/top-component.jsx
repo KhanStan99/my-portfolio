@@ -33,7 +33,7 @@ export default function TopComponent() {
       <Paper className={classes.topPaper} elevation={0}>
         <img
           className={classes.profileImage}
-          src="https://pbs.twimg.com/profile_images/1341766704125280256/Z3CL71rq_400x400.jpg"
+          src="https://raw.githubusercontent.com/KhanStan99/my-portfolio/master/src/asset/dp.jpg"
           alt="user-holder"
         />
         <br></br>
