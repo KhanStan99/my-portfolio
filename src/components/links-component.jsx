@@ -52,9 +52,9 @@ export default function LinksComponent() {
       target: 'https://www.youtube.com/channel/UCAwvnxzb2YgftWrF8Vu7FuA',
     },
     {
-      title: 'Trentweet Gaming',
+      title: 'SHAF (Gaming)',
       icon: <VideoCallIcon color="primary" />,
-      target: 'https://www.youtube.com/c/TrentweetGaming/featured',
+      target: 'https://www.youtube.com/c/SHAF399/videos',
     },
   ];
 
@@ -106,10 +106,7 @@ export default function LinksComponent() {
         {ytLinks.map((item) => {
           return (
             <div key={item.target}>
-              <ListItem
-                button
-                onClick={(event) => handleListItemClick(item.target)}
-              >
+              <ListItem button onClick={() => handleListItemClick(item.target)}>
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.title} />
               </ListItem>
