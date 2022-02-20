@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
   },
   profileImage: {
     width: '120px',
-    height: '170px',
+    height: '120px',
+    borderRadius: '50%'
   },
   nameStyle: {
     color: '#fff',
