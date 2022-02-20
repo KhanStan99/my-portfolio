@@ -54,7 +54,7 @@ export default function TopComponent() {
               textAlign: 'center'
             }}
           >
-            <Typography variant="h1" style={{fontSize: '22px'}} className={classes.nameStyle}>
+            <Typography variant="caption" style={{fontSize: '22px'}} className={classes.nameStyle}>
               Hey! I'm Hidayat Ullah Khan
             </Typography>
             
