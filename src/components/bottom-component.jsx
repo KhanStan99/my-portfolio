@@ -1,9 +1,9 @@
-import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
-import { makeStyles } from "@material-ui/core/styles";
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import { makeStyles } from "@mui/styles";
 import React from "react";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 import ProjectsComponent from "./projects-component";
 import LinksComponent from "./links-component";
 

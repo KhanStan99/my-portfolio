@@ -1,27 +1,27 @@
-import Grid from '@material-ui/core/Grid';
+import Grid from '@mui/material/Grid';
 import {
-  createMuiTheme,
-  makeStyles,
+  createTheme,
   ThemeProvider,
   responsiveFontSizes,
-} from '@material-ui/core/styles';
+} from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 import React from 'react';
-import Box from '@material-ui/core/Box';
+import Box from '@mui/material/Box';
 import TopComponent from './components/top-component';
 import BottomComponent from './components/bottom-component';
 import './index.css';
 
-let theme = createMuiTheme({
+let theme = createTheme({
   palette: {
     primary: {
-      main: '#f44336',
+      main: '#42a5f5',
     },
     secondary: {
-      main: '#e57373',
+      main: '#3f51b5',
     },
   },
   typography: {
-    fontFamily: 'Noto Sans',
+    fontFamily: ['Noto Sans', 'Roboto'],
   },
 });
 
@@ -48,7 +48,7 @@ function App() {
         <Grid
           item
           style={{
-            background: 'linear-gradient(90deg, #FE6B8B 30%, #FF8E53 90%)',
+            background: 'linear-gradient(90deg, #3f51b5 30%, #42a5f5 90%)',
           }}
           xs={false}
           sm={false}

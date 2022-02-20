@@ -1,21 +1,18 @@
 import React from 'react';
-// import { makeStyles } from "@material-ui/core/styles";
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import Typography from '@material-ui/core/Typography';
-import LanguageIcon from '@material-ui/icons/Language';
-import VideoCallIcon from '@material-ui/icons/VideoCall';
-// const useStyles = makeStyles((theme) => ({}));
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Divider from '@mui/material/Divider';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Typography from '@mui/material/Typography';
+import LanguageIcon from '@mui/icons-material/Language';
+import VideoCallIcon from '@mui/icons-material/VideoCall';
 
 export default function LinksComponent() {
-  // const classes = useStyles();
 
   const socialLinks = [
     {

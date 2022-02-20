@@ -1,7 +1,7 @@
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import { makeStyles } from '@mui/styles';
+import Typography from '@mui/material/Typography';
 import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
@@ -9,16 +9,17 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: 'start',
     color: theme.palette.text.secondary,
-    background: 'linear-gradient(90deg, #FE6B8B 30%, #FF8E53 90%)',
+    background: 'linear-gradient(90deg, #3f51b5 30%, #42a5f5 90%)',
     borderRadius: '0px',
   },
   profileImage: {
     width: '120px',
     height: '120px',
-    borderRadius: '50%'
+    borderRadius: '50%',
   },
   nameStyle: {
     color: '#fff',
+    fontFamily: 'Roboto'
   },
   divider: {
     backgroundColor: '#FFF',
@@ -32,26 +33,40 @@ export default function TopComponent() {
   return (
     <Grid item>
       <Paper className={classes.topPaper} elevation={0}>
-        <Grid style={{ display: 'flex' }}>
+        <Grid
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
           <img
             className={classes.profileImage}
-            src="https://raw.githubusercontent.com/KhanStan99/my-portfolio/master/src/asset/dp.jpg"
+            src="https://raw.githubusercontent.com/KhanStan99/my-portfolio/master/src/asset/profile_pic.jpg"
             alt="user-holder"
           />
-          <Grid style={{ marginLeft: '10px' }}>
-            <Typography variant="button" className={classes.nameStyle}>
-              Hidayat Ullah Khan
+          <Grid
+            style={{
+              margin: '10px',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              textAlign: 'center'
+            }}
+          >
+            <Typography variant="h1" style={{fontSize: '22px'}} className={classes.nameStyle}>
+              Hey! I'm Hidayat Ullah Khan
             </Typography>
-            {/* <Divider light className={classes.divider} /> */}
+            
             <br />
-            <Typography variant="caption" className={classes.nameStyle}>
-              3+ Years solid experiance as a full stack developer in
+            <Typography variant="caption" style={{fontSize: '16px'}} className={classes.nameStyle}>
+              4+ Years solid experiance as a full stack developer in
               technologies like ReactJS, Angular, VueJs, Android Native, NodeJs,
               MySql DB working in an agile/scrum environment. In my free time i
               play and stream games.
             </Typography>
             <div>
-              <Typography variant="caption" className={classes.nameStyle}>
+              <Typography style={{fontSize: '16px'}} variant="caption" className={classes.nameStyle}>
                 I love coding{' '}
                 <span role="img" aria-label="computer">
                   💻
