@@ -41,20 +41,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Box className={classes.root} sx={{ flexGrow: 1 }}>
-        <Grid item xs={12} sm={12} md={7} lg={3}>
+        <Grid item xs={12} sm={12} md={12} lg={12}>
           <TopComponent />
           <BottomComponent />
         </Grid>
-        <Grid
-          item
-          style={{
-            background: 'linear-gradient(90deg, #3f51b5 30%, #42a5f5 90%)',
-          }}
-          xs={false}
-          sm={false}
-          md={5}
-          lg={9}
-        ></Grid>
       </Box>
     </ThemeProvider>
   );
