@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   nameStyle: {
     color: '#fff',
-    fontFamily: 'Roboto'
+    fontFamily: 'Roboto',
   },
   divider: {
     backgroundColor: '#FFF',
@@ -51,22 +51,33 @@ export default function TopComponent() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
-            <Typography variant="caption" style={{fontSize: '22px'}} className={classes.nameStyle}>
+            <Typography
+              variant="caption"
+              style={{ fontSize: '22px' }}
+              className={classes.nameStyle}
+            >
               Hey! I'm Hidayat Ullah Khan
             </Typography>
-            
+
             <br />
-            <Typography variant="caption" style={{fontSize: '16px'}} className={classes.nameStyle}>
-              4+ Years solid experiance as a full stack developer in
-              technologies like ReactJS, Angular, VueJs, Android Native, NodeJs,
-              MySql DB working in an agile/scrum environment. In my free time i
-              play and stream games.
+            <Typography
+              variant="caption"
+              style={{ fontSize: '16px' }}
+              className={classes.nameStyle}
+            >
+              I am a full stack developer mostly worked on ReactJS, Vue,
+              Angular, Android Native, NodeJs, MySql DB in an agile/scrum
+              environment. In my free time i play and stream games.
             </Typography>
             <div>
-              <Typography style={{fontSize: '16px'}} variant="caption" className={classes.nameStyle}>
+              <Typography
+                style={{ fontSize: '16px' }}
+                variant="caption"
+                className={classes.nameStyle}
+              >
                 I love coding{' '}
                 <span role="img" aria-label="computer">
                   💻

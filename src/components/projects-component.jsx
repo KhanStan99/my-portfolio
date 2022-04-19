@@ -174,7 +174,7 @@ export default function ProjectsComponent() {
     <Grid container spacing={2} direction="row">
       {projects.map((item) => {
         return (
-          <Grid item xs={12} sm={12} md={6} lg={4} key={item.title}>
+          <Grid item xs={12} sm={12} md={6} lg={3} key={item.title}>
             <Card
               key={item.title}
               className={classes.cards}

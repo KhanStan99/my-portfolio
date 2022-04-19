@@ -21,7 +21,7 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ['Noto Sans', 'Roboto'],
+    fontFamily: ['Noto Sans'],
   },
 });
 
