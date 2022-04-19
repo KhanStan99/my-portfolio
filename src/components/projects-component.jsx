@@ -37,23 +37,23 @@ export default function ProjectsComponent() {
 
   const projects = [
     {
-      title: 'Covid 19 Tracker',
+      title: 'Quran Tracker',
       image:
-        'https://static.wixstatic.com/media/8443ed_907b0743b641488abe35a9947646ee03~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_90,usm_0.66_1.00_0.01/8443ed_907b0743b641488abe35a9947646ee03~mv2.jpg',
-      description:
-        'In December 2019, a novel coronavirus strain (SARS-CoV-2) emerged in the city of Wuhan, China. I created a tracking application specifically for Indian regions which shows detailed list of cases from all over India.',
+        'https://camo.githubusercontent.com/0d28173dc2f64f8aa57e49f1430a1e409eb6b2bfc3ef0553234ec857910f7cde/68747470733a2f2f692e6962622e636f2f797164646430372f6d61696e2e6a7067',
+      description: 'An app for tracking your Quran progress with statistics.',
       target: [
         {
           label: 'View on Github',
-          target: 'https://github.com/KhanStan99/Covid-19Tracker-ReactJS',
+          target: 'https://github.com/KhanStan99/quran-tracker',
         },
         {
           label: 'View on Web',
-          target: 'https://cv19tracker.firebaseapp.com/',
+          target: 'https://khanstan99.github.io/quran-tracker',
         },
       ],
       tags: ['ReactJS', 'Material UI', 'Java Script', 'HTMl/CSS'],
     },
+
     {
       title: 'Image Compressor - Android',
       image:
@@ -99,7 +99,6 @@ export default function ProjectsComponent() {
       ],
       tags: ['Android', 'MVVM', 'Kotlin', 'XML'],
     },
-
     {
       title: "Gilfoyle's Bitcoin Alert Android App",
       image:
@@ -146,6 +145,24 @@ export default function ProjectsComponent() {
         },
       ],
       tags: ['Android', 'Kotlin', 'XML', 'REST', 'NodeJS'],
+    },
+    {
+      title: 'Covid 19 Tracker',
+      image:
+        'https://static.wixstatic.com/media/8443ed_907b0743b641488abe35a9947646ee03~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_90,usm_0.66_1.00_0.01/8443ed_907b0743b641488abe35a9947646ee03~mv2.jpg',
+      description:
+        'In December 2019, a novel coronavirus strain (SARS-CoV-2) emerged in the city of Wuhan, China. I created a tracking application specifically for Indian regions which shows detailed list of cases from all over India.',
+      target: [
+        {
+          label: 'View on Github',
+          target: 'https://github.com/KhanStan99/Covid-19Tracker-ReactJS',
+        },
+        {
+          label: 'View on Web',
+          target: 'https://cv19tracker.firebaseapp.com/',
+        },
+      ],
+      tags: ['ReactJS', 'Material UI', 'Java Script', 'HTMl/CSS'],
     },
   ];
 
