@@ -42,7 +42,7 @@ export default function TopComponent() {
         >
           <img
             className={classes.profileImage}
-            src="https://raw.githubusercontent.com/KhanStan99/my-portfolio/master/src/asset/profile_pic.jpg"
+            src="images/profile-pic.jpg"
             alt="user-holder"
           />
           <Grid
