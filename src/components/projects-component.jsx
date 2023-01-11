@@ -48,7 +48,7 @@ export default function ProjectsComponent() {
         },
         {
           label: 'View on Web',
-          target: 'https://khanstan99.github.io/quran-tracker',
+          target: 'https://quran-read-tracker.web.app/',
         },
       ],
       tags: ['ReactJS', 'Material UI', 'Java Script', 'HTMl/CSS'],
