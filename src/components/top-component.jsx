@@ -1,29 +1,12 @@
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import { makeStyles } from '@mui/styles';
-import Typography from '@mui/material/Typography';
 import React from 'react';
+import { Grid2, Typography } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
-  topPaper: {
-    padding: theme.spacing(2),
-    textAlign: 'start',
-    color: theme.palette.text.secondary,
-    background: 'linear-gradient(90deg, #3f51b5 30%, #42a5f5 90%)',
-    borderRadius: '0px',
-  },
   profileImage: {
     width: '120px',
     height: '120px',
     borderRadius: '50%',
-  },
-  nameStyle: {
-    color: '#fff',
-    fontFamily: 'Roboto',
-  },
-  divider: {
-    backgroundColor: '#FFF',
-    margin: '15px',
   },
 }));
 
@@ -31,76 +14,49 @@ export default function TopComponent() {
   const classes = useStyles();
 
   return (
-    <Grid item>
-      <Paper className={classes.topPaper} elevation={0}>
-        <Grid
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}
-        >
-          <img
-            className={classes.profileImage}
-            src="images/profile-pic.jpg"
-            alt="user-holder"
-          />
-          <Grid
-            style={{
-              margin: '10px',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              textAlign: 'center',
-            }}
-          >
-            <Typography
-              variant="caption"
-              style={{ fontSize: '22px' }}
-              className={classes.nameStyle}
-            >
-              Hey! I'm Hidayat Ullah Khan
-            </Typography>
+    <Grid2
+      container
+      spacing={2}
+      padding={2}
+      display={'flex'}
+      flexDirection={'column'}
+      alignItems={'center'}
+      textAlign={'center'}
+    >
+      <img
+        className={classes.profileImage}
+        src="images/profile-pic.jpg"
+        alt="user-holder"
+      />
 
-            <br />
-            <Typography
-              variant="caption"
-              style={{ fontSize: '16px' }}
-              className={classes.nameStyle}
-            >
-              I am a full stack developer mostly worked on ReactJS, Vue,
-              Angular, Android Native, NodeJs, MySql DB in an agile/scrum
-              environment. In my free time i play and stream games.
-            </Typography>
-            <div>
-              <Typography
-                style={{ fontSize: '16px' }}
-                variant="caption"
-                className={classes.nameStyle}
-              >
-                I love coding{' '}
-                <span role="img" aria-label="computer">
-                  💻
-                </span>{' '}
-                gaming{' '}
-                <span role="img" aria-label="game">
-                  🎮
-                </span>{' '}
-                sports
-                <span role="img" aria-label="football">
-                  ⚽
-                </span>{' '}
-                and food{' '}
-                <span role="img" aria-label="food">
-                  🥙
-                </span>
-              </Typography>
-            </div>
-          </Grid>
-        </Grid>
+      <Typography variant="h5" color="primary" fontWeight={'bold'}>
+        Hey! I'm Hidayat Ullah Khan
+      </Typography>
 
-        {/* <Divider light className={classes.divider} /> */}
-      </Paper>
-    </Grid>
+      <Typography variant="body1">
+        I am a full stack developer mostly worked on ReactJS, Vue, Angular,
+        Android Native, NodeJs, MySql DB in an agile/scrum environment. In my
+        free time i play and stream games.
+      </Typography>
+
+      <Typography variant="body2">
+        I love coding{' '}
+        <span role="img" aria-label="computer">
+          💻
+        </span>{' '}
+        gaming{' '}
+        <span role="img" aria-label="game">
+          🎮
+        </span>{' '}
+        sports
+        <span role="img" aria-label="football">
+          ⚽
+        </span>{' '}
+        and food{' '}
+        <span role="img" aria-label="food">
+          🥙
+        </span>
+      </Typography>
+    </Grid2>
   );
 }

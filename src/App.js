@@ -1,12 +1,6 @@
-import Grid from '@mui/material/Grid';
-import {
-  createTheme,
-  ThemeProvider,
-  responsiveFontSizes,
-} from '@mui/material/styles';
-import { makeStyles } from '@mui/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import React from 'react';
-import Box from '@mui/material/Box';
+import { Box, Grid2 } from '@mui/material';
 import TopComponent from './components/top-component';
 import BottomComponent from './components/bottom-component';
 import './index.css';
@@ -25,26 +19,15 @@ let theme = createTheme({
   },
 });
 
-theme = responsiveFontSizes(theme);
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    display: 'flex',
-    flexDirection: 'row',
-  },
-}));
 
 function App() {
-  const classes = useStyles();
-
   return (
     <ThemeProvider theme={theme}>
-      <Box className={classes.root} sx={{ flexGrow: 1 }}>
-        <Grid item xs={12} sm={12} md={12} lg={12}>
+      <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'row' }}>
+        <Grid2 item xs={12} sm={12} md={12} lg={12}>
           <TopComponent />
           <BottomComponent />
-        </Grid>
+        </Grid2>
       </Box>
     </ThemeProvider>
   );

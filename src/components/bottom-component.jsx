@@ -1,24 +1,21 @@
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import { makeStyles } from "@mui/styles";
-import React from "react";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import ProjectsComponent from "./projects-component";
-import LinksComponent from "./links-component";
+import React from 'react';
+import ProjectsComponent from './projects-component';
+import LinksComponent from './links-component';
+import { Grid2, Paper, Tab, Tabs } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
   bottomPaper: {
     padding: theme.spacing(2),
-    textAlign: "center",
+    textAlign: 'center',
     color: theme.palette.text.secondary,
   },
   profileImage: {
-    borderRadius: "50%",
-    width: "100px",
+    borderRadius: '50%',
+    width: '100px',
   },
   nameStyle: {
-    color: "#fff",
+    color: '#fff',
   },
 }));
 
@@ -26,7 +23,7 @@ export default function BottomComponent(props) {
   const classes = useStyles();
 
   const [value, setValue] = React.useState(
-    window.location.pathname === "/links" ? 1 : 0
+    window.location.pathname === '/links' ? 1 : 0
   );
 
   const handleChange = (event, newValue) => {
@@ -34,7 +31,7 @@ export default function BottomComponent(props) {
   };
 
   return (
-    <Grid item>
+    <Grid2 item>
       <Paper className={classes.bottomPaper} elevation={0}>
         <Tabs
           value={value}
@@ -53,7 +50,7 @@ export default function BottomComponent(props) {
           <LinksComponent />
         </TabPanel>
       </Paper>
-    </Grid>
+    </Grid2>
   );
 }
 

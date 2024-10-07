@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
+
 body {
-  margin: 0;
+  max-width: 650px;
+  margin: 0 auto;
 }
